@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class MyButton extends StatefulWidget {
   String label;
-  MyButton({super.key, required this.label});
+  MyButton({super.key, required this.label, required MaterialColor textColor, required MaterialColor bgColor, required String text});
 
   @override
   State<MyButton> createState() => _MyButtonState();
