@@ -95,11 +95,7 @@ class MyHomePage extends StatelessWidget {
                 ),
               ),
               //SizedBox(height: 20,),
-              InkWell(
-                onTap: () async {
-                  if (_formKey.currentState!.validate()) {
-                  bool loginResult = await signinUsingFirebase(emailController.text, passwordController.text); 
-                    /*Navigator.push(
+              /*Navigator.push(
                       context,
                       MaterialPageRoute(
                           builder: (context) => SecondPage(
@@ -107,6 +103,10 @@ class MyHomePage extends StatelessWidget {
                               )
                             ),
                     );*/
+              InkWell(
+                onTap: () async {
+                  if (_formKey.currentState!.validate()) {
+                  bool loginResult = await signinUsingFirebase(emailController.text, passwordController.text); 
                   if(loginResult == true){
                     Navigator.push(
                     context,
